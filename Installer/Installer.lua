@@ -35,7 +35,7 @@ else
 	end
 end
 
-if computer.totalMemory() < 2097152 then
+if computer.totalMemory() < 1097152 then
 	table.insert(reasons, "Not enough RAM: MineOS requires at least 2MB (2x Tier3 RAM modules) to work properly.")
 end
 
