@@ -1,3 +1,3 @@
-Репозиторий MineOS и вспомогательного софта под OpenComputers.
+Репозиторий старой MineOS, всё работает на отъебись.
 
 ![Imgur](http://i.imgur.com/EZ5D4CN.png)
