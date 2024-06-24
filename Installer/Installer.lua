@@ -57,9 +57,9 @@ local paths = {
 }
 
 local urls = {
-	applicationList = "https://raw.githubusercontent.com/IgorTimofeev/OpenComputers/master/Applications.cfg",
-	installer = "https://raw.githubusercontent.com/IgorTimofeev/OpenComputers/master/Installer/",
-	EFI = "https://raw.githubusercontent.com/IgorTimofeev/OpenComputers/master/MineOS/EFI.lua",
+	applicationList = "https://raw.githubusercontent.com/Hapalarast/OpenComputers/master/Applications.cfg",
+	installer = "https://raw.githubusercontent.com/Hapalarast/OpenComputers/master/Installer/",
+	EFI = "https://raw.githubusercontent.com/Hapalarast/OpenComputers/master/MineOS/EFI.lua",
 }
 
 ------------------------------------------------------------------------------------------------------------------------------------
@@ -217,7 +217,7 @@ end
 
 stages[3] = function()
 	addButtonsToStage()
-	local data = web.request("https://raw.githubusercontent.com/IgorTimofeev/OpenComputers/master/MineOS/License/" .. OSSettings.language .. ".lang")
+	local data = web.request("https://raw.githubusercontent.com/Hapalarast/OpenComputers/master/MineOS/License/" .. OSSettings.language .. ".lang")
 	local lines = {}
 	for line in data:gmatch("[^\n]+") do
 		table.insert(lines, line)
