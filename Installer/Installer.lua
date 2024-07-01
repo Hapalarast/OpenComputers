@@ -15,31 +15,10 @@ local screen = component.screen
 
 local reasons = {}
 
-if not _G._OSVERSION or tonumber(_G._OSVERSION:sub(8, 10)) < 1.5 then
-	table.insert(reasons, "Old version of OpenComputers mod detected: MineOS requires OpenComputers 1.5 or newer to work properly.")
-end
-
 -- if computer.getArchitecture and computer.getArchitecture() ~= "Lua 5.2" then
 -- 	table.insert(reasons, "Unsupported CPU architecture detected: please take CPU in your hands, switch it to Lua 5.2 arhitecture and try again.")
 -- end
 
-if component.isAvailable("tablet") then
-	table.insert(reasons, "Tablet PC detected: MineOS can't be installed on tablets.")
-end
-
-if computer.totalMemory() < 1097152 then
-	table.insert(reasons, "Not enough RAM: MineOS requires at least 2MB (2x Tier3 RAM modules) to work properly.")
-end
-
-if #reasons > 0 then
-	print(" ")
-	for i = 1, #reasons do
-		print(reasons[i])
-		print(" ")
-	end
-	
-	return
-end
 
 ------------------------------------------------------------------------------------------------------------------------------------
 
